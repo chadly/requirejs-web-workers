@@ -1,7 +1,7 @@
 Using Web Workers with RequireJS
 =====================
 
-This is a simple plugin that allows you to declare a dependency on a web worker script using requireJS with a simple syntax.
+This is a simple plugin that allows you to declare a dependency on a web worker script using requireJS with a simple syntax. See here for [primer on Web Workers](https://developer.mozilla.org/en-US/docs/DOM/Using_web_workers).
 
 ```javascript
     define(["worker!my-web-worker"], function(worker) {
