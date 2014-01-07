@@ -29,4 +29,4 @@ Then, run the server and load the example page:
 npm start
 ```
 
-NOTE: you need to run the example page from a server (e.g. localhost) rather than the file:// protocol for web workers to work. `npm start` spins up a server at `localhost:1337` that you can use.
+NOTE: you need to run the example page from a server (e.g. `localhost`) rather than the `file://` protocol for web workers to work. `npm start` spins up a server at `localhost:1337` that you can use.
