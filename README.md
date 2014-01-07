@@ -15,4 +15,18 @@ The plugin will return an initilized `Worker` object which will resolve the give
 
 If Worker is not defined (IE < 10), the plugin will load a [fake Worker implementation](http://code.google.com/p/fakeworker-js/) so that your scripts can utilize the same Worker API whether the browser supports it or not.
 
-See the example for more details. NOTE: you need to run the example page from a server (e.g. localhost) rather than the file:// protocol for web workers to work. The run-server.bat file will spin up an IIS Express instance if you are on windows.
+###How to Run
+
+Install dependencies:
+
+```
+npm install
+```
+
+Then, run the server and load the example page:
+
+```
+npm start
+```
+
+NOTE: you need to run the example page from a server (e.g. localhost) rather than the file:// protocol for web workers to work. `npm start` spins up a server at `localhost:1337` that you can use.
