@@ -1,5 +1,4 @@
-Using Web Workers with RequireJS
-=====================
+#Using Web Workers with RequireJS
 
 This is a simple plugin that allows you to declare a dependency on a web worker script using requireJS with a simple syntax. See here for [primer on Web Workers](https://developer.mozilla.org/en-US/docs/DOM/Using_web_workers).
 
@@ -15,12 +14,20 @@ The plugin will return an initilized `Worker` object which will resolve the give
 
 If Worker is not defined (IE < 10), the plugin will load a [fake Worker implementation](http://code.google.com/p/fakeworker-js/) so that your scripts can utilize the same Worker API whether the browser supports it or not.
 
-###How to Run
+##How to Run Example Page
 
-Install dependencies:
+The example page just loops and counts to a very large number on a background thread. In order to run the example, you will need to run index.html from a server (e.g. `localhost`) rather than the `file://` protocol for web workers to work.
+
+To run the example with a lightweight node server, first install dependencies:
 
 ```
 npm install
+```
+
+Make sure you have grunt-cli installed if you don't already have it:
+
+```
+npm install grunt-cli -g
 ```
 
 Then, run the server and load the example page:
@@ -29,4 +36,4 @@ Then, run the server and load the example page:
 npm start
 ```
 
-NOTE: you need to run the example page from a server (e.g. `localhost`) rather than the `file://` protocol for web workers to work. `npm start` spins up a server at `localhost:1337` that you can use.
+This will spin up a server at `localhost:1337` and open your web browser.
