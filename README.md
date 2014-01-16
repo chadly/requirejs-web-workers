@@ -14,6 +14,14 @@ The plugin will return an initilized `Worker` object which will resolve the give
 
 If Worker is not defined (IE < 10), the plugin will load a [fake Worker implementation](http://code.google.com/p/fakeworker-js/) so that your scripts can utilize the same Worker API whether the browser supports it or not.
 
+##Install with [Bower](http://bower.io/)
+
+```
+bower install requirejs-web-workers
+```
+
+Then add `src/worker.js` and `src/worker-fake.js` to your project.
+
 ##How to Run Example Page
 
 The example page just loops and counts to a very large number on a background thread. In order to run the example, you will need to run index.html from a server (e.g. `localhost`) rather than the `file://` protocol for web workers to work.
