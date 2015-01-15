@@ -1,4 +1,4 @@
-define(function (text, ko) {
+define(function () {
 	return {
 		version: "1.0.0",
 		load: function (name, req, onLoad, config) {
