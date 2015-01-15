@@ -1,6 +1,6 @@
 define(function () {
 	return {
-		version: "1.0.0",
+		version: "1.0.1",
 		load: function (name, req, onLoad, config) {
 			if (config.isBuild) {
 				//don't do anything if this is a build, can't inline a web worker
