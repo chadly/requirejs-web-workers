@@ -1,4 +1,4 @@
-#Using Web Workers with RequireJS
+# Using Web Workers with RequireJS
 
 This is a simple plugin that allows you to declare a dependency on a web worker script using requireJS with a simple syntax. See here for [primer on Web Workers](https://developer.mozilla.org/en-US/docs/DOM/Using_web_workers).
 
@@ -14,7 +14,7 @@ The plugin will return an initialized `Worker` object which will resolve the giv
 
 If Worker is not defined (IE < 10), the plugin will load a [fake Worker implementation](http://code.google.com/p/fakeworker-js/) so that your scripts can utilize the same Worker API whether the browser supports it or not.
 
-##Install with [Bower](http://bower.io/)
+## Install with [Bower](http://bower.io/)
 
 ```
 bower install requirejs-web-workers
@@ -22,7 +22,7 @@ bower install requirejs-web-workers
 
 Then add `src/worker.js` and `src/worker-fake.js` to your project.
 
-##How to Run Example Page
+## How to Run Example Page
 
 The example page just loops and counts to a very large number on a background thread. In order to run the example, you will need to run index.html from a server (e.g. `localhost`) rather than the `file://` protocol for web workers to work.
 
