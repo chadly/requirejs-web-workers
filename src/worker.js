@@ -10,13 +10,15 @@ define(function () {
 
 			var url = req.toUrl(name);
 
-			if (window.Worker) {
-				onLoad(new Worker(url));
-			} else {
-				req(["worker-fake"], function () {
+			req([url], function (resp) {
+				if (window.Worker) {
 					onLoad(new Worker(url));
-				});
-			}
+				} else {
+					req(["worker-fake"], function () {
+						onLoad(new Worker(url));
+					});
+				}
+			});
 		}
 	};
 });
